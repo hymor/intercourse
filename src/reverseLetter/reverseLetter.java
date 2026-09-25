@@ -2,36 +2,15 @@ package reverseLetter;
 
 public class reverseLetter {
     public static void main(String[] args) {
+        //инициализируем строку
         String inputString = "J@va the be$t!123";
+        //инициализируем объект класса Reverse
+        Reverse reverse = new Reverse();
 
-        String result = reverseLetters(inputString);
+        //вызыва
+        String result = reverse.ReversePhrase(inputString);
 
+        //печатаем результат
         System.out.println(result);
-    }
-    public static String reverseLetters(String input) {
-        char[] chars = input.toCharArray();
-        int left = 0;
-        int right = chars.length - 1;
-
-        while (left < right) {
-
-            if (!Character.isLetter(chars[left])) {
-                left++;
-                continue;
-            }
-
-            if (!Character.isLetter(chars[right])) {
-                right--;
-                continue;
-            }
-
-            char tmp = chars[left];     // меняем местами края
-            chars[left] = chars[right];
-            chars[right] = tmp;
-            left++;                     // сдвигаем указатели навстречу
-            right--;
-
-        }
-        return new String(chars);
     }
 }
