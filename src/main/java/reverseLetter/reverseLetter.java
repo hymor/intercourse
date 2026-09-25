@@ -3,7 +3,8 @@ package reverseLetter;
 public class reverseLetter {
     public static void main(String[] args) {
         //инициализируем строку
-        String inputString = "J@va the be$t!123";
+        //String inputString = "J@va the be$t!123";
+        String inputString = "Jаva";
         //инициализируем объект класса Reverse
         Reverse reverse = new Reverse();
 
