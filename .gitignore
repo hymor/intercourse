@@ -4,6 +4,11 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+/src/main/java/bank/
+/src/main/java/Door/
+/src/main/java/GenericTest/
+/src/main/java/Animal/
+/src/main/java/linkedlist/
 .kotlin
 target/
 
